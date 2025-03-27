@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Frame Genius</h1>
+        <ul class="flex space-x-4">
+            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+            <li><a href="./src/pages/product listing/product listing.html" class="hover:text-gray-300">Product Listing</a></li> <!-- Added Product Listing -->
+            <li><a href="./src/pages/about/about.html" class="hover:text-gray-300">About Us</a></li>
+            <li><a href="/src/pages/contact/contact.html" class="hover:text-gray-300">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="relative w-full overflow-hidden">
+        <div class="flex animate-slide w-full">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWN5gpZCDF2O1lpjtd_coLNvbBMUoUtUTgCg&s" class="w-1/2 mx-auto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIbIC7B-DExZYpOqQDc6xGQqYl-nGBQ7djQ&s" class="w-1/2 mx-auto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-O_mSW-EqI6EwejvL_-AcCgEfdqF229vz0g&s" class="w-1/2 mx-auto">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        <h2 class="text-3xl font-bold text-center mb-6">Gift Shop</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-md transform hover:scale-105 transition">
+                <h3 class="text-xl font-semibold">Birthday Frames</h3>
+                <p class="text-gray-600">Premium Quality Frames</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md transform hover:scale-105 transition">
+                <h3 class="text-xl font-semibold">Light Frames</h3>
+                <p class="text-gray-600">3D LED Magic Frame</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md transform hover:scale-105 transition">
+                <h3 class="text-xl font-semibold">Albums</h3>
+                <p class="text-gray-600">Capture Your Memories</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center p-4 mt-6">
+        <p>&copy; 2025 Frame Genius. All rights reserved.</p>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="#" class="hover:text-gray-300">Facebook</a>
+            <a href="#" class="hover:text-gray-300">Instagram</a>
+            <a href="#" class="hover:text-gray-300">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>

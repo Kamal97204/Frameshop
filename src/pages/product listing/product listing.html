@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Frames - Frame Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Frame Genius</h1>
+        <ul class="flex space-x-4">
+            <li><a href="./../../../index.html" class="hover:text-gray-300">Home</a></li>
+            <li><a href="shop.html" class="hover:text-gray-300">Product Listing</a></li>
+            <li><a href="./src/pages/about/about.html" class="hover:text-gray-300">About Us</a></li>
+            <li><a href="./src/pages/contact/contact.html" class="hover:text-gray-300">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sorting & Filtering Controls -->
+    <div class="container mx-auto p-6">
+        <h2 class="text-3xl font-bold text-center mb-6">Shop Frames</h2>
+        <div class="flex justify-between mb-4">
+            <button onclick="sortFrames('price', 'asc')" class="bg-blue-500 text-white px-4 py-2 rounded">Sort by Price (Low to High)</button>
+            <button onclick="sortFrames('price', 'desc')" class="bg-blue-500 text-white px-4 py-2 rounded">Sort by Price (High to Low)</button>
+            <select id="filterCategory" class="border p-2" onchange="filterFrames()">
+                <option value="">Filter by Category</option>
+                <option value="Wall Frame">Wall Frame</option>
+                <option value="Tabletop Frame">Tabletop Frame</option>
+                <option value="Custom Frame">Custom Frame</option>
+            </select>
+        </div>
+
+        <!-- Frame Listing -->
+        <div id="frameList" class="grid md:grid-cols-3 gap-6">
+            <!-- Frames will be displayed here dynamically -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center p-4 mt-6">
+        <p>&copy; 2025 Frame Genius. All rights reserved.</p>
+    </footer>
+
+    <!-- Link JavaScript File -->
+    <script src="product.js"></script>
+
+</body>
+</html>
